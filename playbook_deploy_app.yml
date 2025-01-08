@@ -2,6 +2,7 @@
 - name: Deploy app and create service in k8s
   hosts: localhost
   connection: local
+  become_user: jenkins
   become: true
   gather_facts: no
   tasks:
